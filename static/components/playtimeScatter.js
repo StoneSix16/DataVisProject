@@ -37,22 +37,38 @@ const PlaytimeScatter = (props) => {
   const { rawData } = props;
   const [data, setData] = React.useState(rawData);
   const PlaytimeOption = initPlaytimeOption(data);
-  
-  let startTimestamp = 1653840000, endTimestamp = 1685376000, startIndex = 0, endIndex = rawData.length-1;
-  const updateData = (newTimestamp)=>{
-    startTimestamp = newTimestamp[0], endTimestamp = newTimestamp[1]
-    while(rawData[startIndex][4] < startTimestamp && startIndex != rawData.length) startIndex++;
-    while(rawData[startIndex][4] <= startTimestamp && startIndex != 0) startIndex--;
-    while(rawData[endIndex][4] > endTimestamp && endIndex != 0) endIndex--;
-    while(rawData[endIndex][4] <= endTimestamp && endIndex != rawData.length) endIndex++;
 
-    let newdata = rawData.slice(startIndex, endIndex)
-    setData(newdata)
-  }
+  let startTimestamp = 1653840000,
+    endTimestamp = 1685376000,
+    startIndex = 0,
+    endIndex = rawData.length - 1;
+  const updateData = (newTimestamp) => {
+    (startTimestamp = newTimestamp[0]), (endTimestamp = newTimestamp[1]);
+    while (
+      rawData[startIndex][4] < startTimestamp &&
+      startIndex != rawData.length
+    )
+      startIndex++;
+    while (rawData[startIndex][4] <= startTimestamp && startIndex != 0)
+      startIndex--;
+    while (rawData[endIndex][4] > endTimestamp && endIndex != 0) endIndex--;
+    while (rawData[endIndex][4] <= endTimestamp && endIndex != rawData.length)
+      endIndex++;
+
+    let newdata = rawData.slice(startIndex, endIndex);
+    setData(newdata);
+  };
   return (
     <div>
-      <ReactEcharts option={PlaytimeOption} style={{ height: "90vh", width: "80vw" }} />
-      <DateSlider startTimestamp={startTimestamp} endTimestamp={endTimestamp} updateData={updateData}/>
+      <ReactEcharts
+        option={PlaytimeOption}
+        style={{ height: "90vh", width: "80vw" }}
+      />
+      <DateSlider
+        startTimestamp={startTimestamp}
+        endTimestamp={endTimestamp}
+        updateData={updateData}
+      />
     </div>
   );
 };
@@ -114,10 +130,4 @@ function initPlaytimeOption(data) {
   };
 
   return option;
-}
-
-function setPlaytimeOption(option, data, index = 0) {
-  let newOption = option;
-  newOption.series[index].data = data;
-  return newOption;
 }
