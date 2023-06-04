@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src={{ url_for('static', filename="./lib/react.js")}}></script>
+    <script src={{ url_for('static', filename="./lib/react-dom.js")}}></script>
+    <script src={{ url_for('static', filename="./lib/material-ui.js")}}></script>
+    <script src={{ url_for('static', filename="./lib/babel.js")}}></script>
+    <script src={{ url_for('static', filename="./lib/echart.js")}}></script>
+    <script src={{ url_for('static', filename="./lib/echarts-gl.min.js")}}></script>
+    <script src={{ url_for('static', filename="./lib/d3.v5.min.js")}}></script>
+
+    <link href={{ url_for('static', filename='./css/style.css') }} rel="stylesheet" >
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const { Stack, Card, Button, Slider, Box, Typography, css, makeStyles } = MaterialUI; // 导入 MaterialUI 组件
+    </script>
+
+    <script src={{ url_for('static', filename="./component/ReactEcharts.js")}} type="text/babel"></script>
+    <script src={{ url_for('static', filename="./component/playtimeScatter.js")}} type="text/babel"></script>
+    <script src={{ url_for('static', filename="./js/utils.js")}} type="text/babel"></script>
+    <script src={{ url_for('static', filename="./js/main.js")}} type="text/babel"></script>
+
+    <script type="text/babel">
+      loadData().then((data) => {
+        init(data);
+      });
+    </script>
+  </body>
+</html>
