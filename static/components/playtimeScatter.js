@@ -33,15 +33,29 @@ const DateSlider = (props) => {
   );
 };
 
+const ReviewInfo = (props) => {
+  const { info } = props;
+  const show = (item) => {
+    return item ? item[6] : null;
+  };
+  return (
+    <CardContent>
+      <Typography component="p">{show(info)}</Typography>
+    </CardContent>
+  );
+};
+
 const PlaytimeScatter = (props) => {
   const { rawData } = props;
   const [data, setData] = React.useState(rawData);
+  const [info, setInfo] = React.useState(null);
   const PlaytimeOption = initPlaytimeOption(data);
 
   let startTimestamp = 1653840000,
     endTimestamp = 1685376000,
     startIndex = 0,
     endIndex = rawData.length - 1;
+
   const updateData = (newTimestamp) => {
     (startTimestamp = newTimestamp[0]), (endTimestamp = newTimestamp[1]);
     while (
@@ -58,18 +72,39 @@ const PlaytimeScatter = (props) => {
     let newdata = rawData.slice(startIndex, endIndex);
     setData(newdata);
   };
+
+  const updateInfo = (event) => {
+    if (event) {
+      if (
+        event.componentType == "series" &&
+        event.componentSubType == "scatter3D"
+      ) {
+        setInfo(event.data);
+      }
+    }
+  };
   return (
-    <div>
-      <ReactEcharts
-        option={PlaytimeOption}
-        style={{ height: "90vh", width: "40vw" }}
-      />
-      <DateSlider
-        startTimestamp={startTimestamp}
-        endTimestamp={endTimestamp}
-        updateData={updateData}
-      />
-    </div>
+    <Stack direction="row">
+      <Box width="45vw">
+        <Card >
+          <ReactEcharts
+            option={PlaytimeOption}
+            style={{ height: "90vh", width: "40vw" }}
+            eventHandler={updateInfo}
+          />
+          <DateSlider
+            startTimestamp={startTimestamp}
+            endTimestamp={endTimestamp}
+            updateData={updateData}
+          />
+        </Card>
+      </Box>
+      <Box width="45vw" mx="auto" my="auto">
+        <Card>
+          <ReviewInfo info={info} />
+        </Card>
+      </Box>
+    </Stack>
   );
 };
 
@@ -123,8 +158,8 @@ function initPlaytimeOption(data) {
         dimension: 3,
         categories: ["True", "False"],
         pieces: [
-          { value: "True", label: "推荐", color: "#60B6E7", opacity: [0.3] },
-          { value: "False", label: "不推荐", color: "#E06363", opacity: [0.3] },
+          { value: "True", label: "推荐", color: "#60B6E7", opacity: [0.8] },
+          { value: "False", label: "不推荐", color: "#E06363", opacity: [0.8] },
         ],
       },
     ],
