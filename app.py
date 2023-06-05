@@ -1,18 +1,14 @@
 from flask import Flask, render_template, request, jsonify, redirect
-from core import return_string
-from core import return_sum
+from core import returnWordCnt
 
 import os
 
 app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 100*1024*1024
 
-@app.route("/getdata")
-def getdata():
-    eventname = request.args.get('event_name')
-    num1 = request.args.get('num_1', 0, type=int)
-    num2 = request.args.get('num_2', 0, type=int)
-    num3 = request.args.get('num_3', 0, type=int)
-    return jsonify( return_sum(eventname, num1, num2, num3) )
+@app.route("/getwordcnt",  methods=['GET'])
+def getWordCnt():
+    return jsonify( returnWordCnt() )
 
 @app.route("/")
 def index():

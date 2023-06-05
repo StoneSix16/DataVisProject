@@ -62,7 +62,7 @@ const PlaytimeScatter = (props) => {
     <div>
       <ReactEcharts
         option={PlaytimeOption}
-        style={{ height: "90vh", width: "80vw" }}
+        style={{ height: "90vh", width: "40vw" }}
       />
       <DateSlider
         startTimestamp={startTimestamp}
@@ -75,9 +75,10 @@ const PlaytimeScatter = (props) => {
 
 function initPlaytimeOption(data) {
   const xAxis3D = {
-      name: "评论后游玩时长",
+      name: "评论情绪",
       type: "value",
-      max: 1200,
+      min: 0,
+      max: 1,
       scale: true,
     },
     yAxis3D = {
@@ -108,7 +109,7 @@ function initPlaytimeOption(data) {
       {
         type: "scatter3D",
         data: data,
-        symbolSize: 3,
+        symbolSize: 6,
       },
     ],
     xAxis3D: xAxis3D,
@@ -122,8 +123,8 @@ function initPlaytimeOption(data) {
         dimension: 3,
         categories: ["True", "False"],
         pieces: [
-          { value: "True", label: "推荐", color: "#60B6E7", opacity: [0.5] },
-          { value: "False", label: "不推荐", color: "#E06363", opacity: [0.5] },
+          { value: "True", label: "推荐", color: "#60B6E7", opacity: [0.3] },
+          { value: "False", label: "不推荐", color: "#E06363", opacity: [0.3] },
         ],
       },
     ],

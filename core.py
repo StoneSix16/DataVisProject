@@ -1,9 +1,9 @@
 import sys
+import json
+from Utils import WordCnt
 
-def return_sum(eventname, data1, data2, data3):
-    res = {'event': eventname, 'result': data1 * data2 * data3}
-    return res
-
-def return_string(data1, data2, data3):
-    res = {'dataStr': data1, 'dataValA': data2, 'dataValB': data3}
-    return res
+def returnWordCnt():
+    f = open("static/data/wordscnt.json",encoding='utf-8')
+    tmp = json.load(f)
+    return list(zip(tmp.keys(), tmp.values()))
+    
