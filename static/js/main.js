@@ -48,6 +48,11 @@ function init(args) {
       <Stack>
         <Box m={1}>
           <Card>
+           <Recommendation/>
+          </Card>
+        </Box>
+        <Box m={1}>
+          <Card>
             <Words relations={relations} frequency={frequency}/>
           </Card>
         </Box>
