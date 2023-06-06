@@ -3,16 +3,15 @@ async function loadData() {
   let data = await d3.csv("/static/data/data.csv").then((rawdata) => {
     return rawdata.map((item) => {
       return [
-        parseFloat(item.emotion),
+        item.emotion == "-1" ? 0.5 : parseFloat(item.emotion),
         parseFloat(item.playtime_last_two_weeks) / 60,
         parseFloat(item.playtime_at_review) / 60,
         item.voted_up,
         Number(item.timestamp_created),
         Number(item.last_played),
         item.review,
-        (parseFloat(item.playtime_forever) -
-          parseFloat(item.playtime_at_review)) /
-          60,
+        item.votes_up,
+        item.votes_funny,
       ];
     });
   });
@@ -27,7 +26,7 @@ async function loadData() {
     });
     return graph;
   });
-  
+
   let frequency = await axios.get("/getwordcnt").then((res) => {
     return res.data.map((item) => {
       return { name: item[0], value: item[1] };
@@ -48,17 +47,17 @@ function init(args) {
       <Stack>
         <Box m={1}>
           <Card>
-           <Recommendation/>
+            <Recommendation rawData={rawData} />
           </Card>
         </Box>
         <Box m={1}>
           <Card>
-            <Words relations={relations} frequency={frequency}/>
+            <Words relations={relations} frequency={frequency} />
           </Card>
         </Box>
         <Box m={1}>
           <Card>
-            <PlaytimeScatter rawData={rawData} />
+            <Playtime rawData={rawData} />
           </Card>
         </Box>
       </Stack>
