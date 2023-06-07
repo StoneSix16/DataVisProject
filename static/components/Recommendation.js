@@ -41,7 +41,7 @@ const Recommendation = (props) => {
     initRecommendationMonthlyOption(monthData);
 
   return (
-    <Stack direction="row" justifyContent={"space-between"}>
+    <Stack direction="row" justifyContent={"space-between"} >
       <ReactEcharts
         option={recommendationYearlyOption}
         style={{ height: "90vh", width: "50vw" }}
@@ -57,17 +57,13 @@ const Recommendation = (props) => {
 
 function initRecommendationYearlyOption(data = null, time = null) {
   const option = {
-    backgroundColor: "#31465c",
+    // backgroundColor: "#31465c",
     title: {
       text: "2022年6月到2023年5月Apex国区好评差评人数对比", //主标题文本
-      left: "left", //title组件离容器左侧的距离
-      textStyle: {
-        color: "#fff", //字体颜色
-        fontStyle: "italic", //斜体
-        fontFamily: "monospace",
-      },
+      left: 20, //title组件离容器左侧的距离
+      top:20,
     },
-    color: ["#7cbeef", "#98512f"],
+    color: ["#60B6E7", "#E06363"],
     tooltip: {
       trigger: "axis", //触发类型
       axisPointer: {
@@ -75,18 +71,11 @@ function initRecommendationYearlyOption(data = null, time = null) {
       },
     }, //指示器
     legend: {
-      left: "right",
+      right: 20,
+      top: 20,
       data: ["推荐人数", "不推荐人数"],
-      textStyle: { fontSize: 16, color: "#fff" },
-    }, //图例
-    /* toolbox: {
-            show: true,
-            orient:'vertical',
-            feature:{
-                dataZoom,
-            },
-        },//工具栏
-        */
+      textStyle: { fontSize: 16 },
+    },
     grid: [{ bottom: "50%" }, { top: "50%" }], //网格
     xAxis: [
       {
@@ -138,7 +127,6 @@ function initRecommendationYearlyOption(data = null, time = null) {
         },
         axisLabel: {
           show: true,
-          color: "#66ccff",
           fontSize: 16,
         },
         splitArea: {
@@ -177,11 +165,7 @@ function initRecommendationYearlyOption(data = null, time = null) {
         axisLine: {
           show: true,
           onZero: false,
-          lineStyle: {
-            color: "#fff",
-          },
         },
-
         minInterval: 1,
         splitLine: false,
         nameTextStyle: {
@@ -195,9 +179,6 @@ function initRecommendationYearlyOption(data = null, time = null) {
         axisLine: {
           show: true,
           onZero: false,
-          lineStyle: {
-            color: "#fff",
-          },
         },
 
         minInterval: 1,
@@ -206,7 +187,6 @@ function initRecommendationYearlyOption(data = null, time = null) {
         gridIndex: 1,
         nameGap: 30,
         inverse: true,
-
         min: 0,
       },
     ],
@@ -236,19 +216,15 @@ function initRecommendationYearlyOption(data = null, time = null) {
 
 function initRecommendationMonthlyOption(monthData) {
   const option = {
-    backgroundColor: "#31465c",
+    // backgroundColor: "#31465c",
     title: {
       text: `${monthData.month < 6 ? 2023 : 2022}年${
         monthData.month
       }月Apex国区好评差评人数对比`,
-      left: "left", //title组件离容器左侧的距离
-      textStyle: {
-        color: "#fff", //字体颜色
-        fontStyle: "italic", //斜体
-        fontFamily: "monospace",
-      },
+      left: 20, 
+      top: 20, 
     },
-    color: ["#7cbeef", "#98512f"],
+    color: ["#60B6E7", "#E06363"],
     tooltip: {
       trigger: "axis", //触发类型
       axisPointer: {
@@ -256,9 +232,10 @@ function initRecommendationMonthlyOption(monthData) {
       },
     }, //指示器
     legend: {
-      left: "right",
+      right: 20,
+      top: 20,
       data: ["推荐人数", "不推荐人数"],
-      textStyle: { fontSize: 16, color: "#fff" },
+      textStyle: { fontSize: 16 },
     }, //图例
     /* toolbox: {
             show: true,
@@ -306,7 +283,6 @@ function initRecommendationMonthlyOption(monthData) {
         },
         axisLabel: {
           show: true,
-          color: "#66ccff",
           fontSize: 16,
         },
         splitArea: {
@@ -332,9 +308,6 @@ function initRecommendationMonthlyOption(monthData) {
         axisLine: {
           show: true,
           onZero: false,
-          lineStyle: {
-            color: "#fff",
-          },
         },
 
         minInterval: 1,
@@ -349,9 +322,6 @@ function initRecommendationMonthlyOption(monthData) {
         axisLine: {
           show: true,
           onZero: false,
-          lineStyle: {
-            color: "#fff",
-          },
         },
 
         minInterval: 1,

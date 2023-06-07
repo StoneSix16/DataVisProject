@@ -4,3 +4,9 @@ body {
 .slider-box{
     padding-left: 20px;
 }
+#voted-up{
+  color: #60B6E7;
+}
+#voted-down{
+  color: #E06363;
+}

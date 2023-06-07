@@ -3,8 +3,8 @@
         {
             "id": "0",
             "name": "服务器",
-            "value": 4801803,
-            "symbolSize": 4801803,
+            "value": 51,
+            "symbolSize": 51,
             "x": -266.82776,
             "y": 299.6904,
             "category": 0
@@ -12,8 +12,8 @@
         {
             "id": "1",
             "name": "连接",
-            "value": 32190947,
-            "symbolSize": 32190947,
+            "value": 47,
+            "symbolSize": 47,
             "x": -418.08344,
             "y": 446.8853,
             "category": 0
@@ -21,8 +21,8 @@
         {
             "id": "2",
             "name": "尝试",
-            "value": 32170382,
-            "symbolSize": 32170382,
+            "value": 26,
+            "symbolSize": 26,
             "x": -212.76357,
             "y": 245.29176,
             "category": 1
@@ -30,8 +30,8 @@
         {
             "id": "3",
             "name": "中",
-            "value": 31238930,
-            "symbolSize": 31238930,
+            "value": 46,
+            "symbolSize": 46,
             "x": -242.82404,
             "y": 235.26283,
             "category": 1
@@ -39,8 +39,8 @@
         {
             "id": "4",
             "name": "重生",
-            "value": 3422030,
-            "symbolSize": 3422030,
+            "value": 51,
+            "symbolSize": 51,
             "x": -379.30386,
             "y": 429.06424,
             "category": 0
@@ -48,8 +48,8 @@
         {
             "id": "5",
             "name": "妈",
-            "value": 11204837,
-            "symbolSize": 11204837,
+            "value": 50,
+            "symbolSize": 50,
             "x": -417.26337,
             "y": 406.03506,
             "category": 0
@@ -57,8 +57,8 @@
         {
             "id": "6",
             "name": "好玩",
-            "value": 3384100,
-            "symbolSize": 3384100,
+            "value": 50,
+            "symbolSize": 50,
             "x": -332.6012,
             "y": 485.16974,
             "category": 0
@@ -66,8 +66,8 @@
         {
             "id": "7",
             "name": "逼",
-            "value": 3450138,
-            "symbolSize": 3450138,
+            "value": 49,
+            "symbolSize": 49,
             "x": -382.69568,
             "y": 475.09113,
             "category": 0
@@ -75,8 +75,8 @@
         {
             "id": "8",
             "name": "垃圾",
-            "value": 2196095,
-            "symbolSize": 2196095,
+            "value": 51,
+            "symbolSize": 51,
             "x": -320.384,
             "y": 387.17325,
             "category": 0
@@ -84,8 +84,8 @@
         {
             "id": "9",
             "name": "傻",
-            "value": 3398331,
-            "symbolSize": 3398331,
+            "value": 49,
+            "symbolSize": 49,
             "x": -344.39832,
             "y": 451.16772,
             "category": 0
@@ -93,8 +93,8 @@
         {
             "id": "10",
             "name": "EA",
-            "value": 8189959,
-            "symbolSize": 8189959,
+            "value": 47,
+            "symbolSize": 47,
             "x": -89.34107,
             "y": 234.56128,
             "category": 1
@@ -102,8 +102,8 @@
         {
             "id": "11",
             "name": "玩",
-            "value": 185631,
-            "symbolSize": 185631,
+            "value": 51,
+            "symbolSize": 51,
             "x": -87.93029,
             "y": -6.8120565,
             "category": 1
@@ -111,8 +111,8 @@
         {
             "id": "12",
             "name": "派",
-            "value": 16650013,
-            "symbolSize": 16650013,
+            "value": 33,
+            "symbolSize": 33,
             "x": -339.77908,
             "y": -184.69139,
             "category": 1
@@ -120,8 +120,8 @@
         {
             "id": "13",
             "name": "我草",
-            "value": 6355999,
-            "symbolSize": 6355999,
+            "value": 40,
+            "symbolSize": 40,
             "x": -194.31313,
             "y": 178.55301,
             "category": 1
@@ -129,8 +129,8 @@
         {
             "id": "14",
             "name": "挂",
-            "value": 98531,
-            "symbolSize": 98531,
+            "value": 49,
+            "symbolSize": 49,
             "x": -158.05168,
             "y": 201.99768,
             "category": 1
@@ -138,8 +138,8 @@
         {
             "id": "15",
             "name": "答辩",
-            "value": 109671,
-            "symbolSize": 109671,
+            "value": 45,
+            "symbolSize": 45,
             "x": -127.701546,
             "y": 242.55057,
             "category": 1
@@ -147,8 +147,8 @@
         {
             "id": "16",
             "name": "bug",
-            "value": 3957261,
-            "symbolSize": 3957261,
+            "value": 50,
+            "symbolSize": 50,
             "x": -385.2226,
             "y": -393.5572,
             "category": 2
@@ -156,8 +156,8 @@
         {
             "id": "17",
             "name": "死",
-            "value": 200807,
-            "symbolSize": 200807,
+            "value": 47,
+            "symbolSize": 47,
             "x": -516.55884,
             "y": -393.98975,
             "category": 2
@@ -165,8 +165,8 @@
         {
             "id": "18",
             "name": "真的",
-            "value": 56903,
-            "symbolSize": 56903,
+            "value": 51,
+            "symbolSize": 51,
             "x": -464.79382,
             "y": -493.57944,
             "category": 2
@@ -174,8 +174,8 @@
         {
             "id": "19",
             "name": "没",
-            "value": 228483,
-            "symbolSize": 228483,
+            "value": 50,
+            "symbolSize": 50,
             "x": -515.1624,
             "y": -456.9891,
             "category": 2
@@ -183,8 +183,8 @@
         {
             "id": "20",
             "name": "卡卡",
-            "value": 1498331,
-            "symbolSize": 1498331,
+            "value": 20,
+            "symbolSize": 20,
             "x": -408.12122,
             "y": -464.5048,
             "category": 2
@@ -192,8 +192,8 @@
         {
             "id": "21",
             "name": "匹配",
-            "value": 126771,
-            "symbolSize": 126771,
+            "value": 50,
+            "symbolSize": 50,
             "x": -456.44113,
             "y": -425.13303,
             "category": 2
@@ -201,8 +201,8 @@
         {
             "id": "22",
             "name": "队友",
-            "value": 2619748,
-            "symbolSize": 2619748,
+            "value": 49,
+            "symbolSize": 49,
             "x": -459.1107,
             "y": -362.5133,
             "category": 2
@@ -210,8 +210,8 @@
         {
             "id": "23",
             "name": "操",
-            "value": 3497478,
-            "symbolSize": 3497478,
+            "value": 43,
+            "symbolSize": 43,
             "x": -313.42786,
             "y": -289.44803,
             "category": 2
@@ -219,8 +219,8 @@
         {
             "id": "24",
             "name": "说",
-            "value": 46005,
-            "symbolSize": 46005,
+            "value": 51,
+            "symbolSize": 51,
             "x": 4.6313396,
             "y": -273.8517,
             "category": 7
@@ -228,8 +228,8 @@
         {
             "id": "25",
             "name": "修",
-            "value": 2291650,
-            "symbolSize": 2291650,
+            "value": 46,
+            "symbolSize": 46,
             "x": 82.80825,
             "y": -203.1144,
             "category": 7
@@ -237,8 +237,8 @@
         {
             "id": "26",
             "name": "玩家",
-            "value": 28928,
-            "symbolSize": 28928,
+            "value": 49,
+            "symbolSize": 49,
             "x": 78.64646,
             "y": -31.512747,
             "category": 6
@@ -246,8 +246,8 @@
         {
             "id": "27",
             "name": "ea",
-            "value": 23536,
-            "symbolSize": 23536,
+            "value": 47,
+            "symbolSize": 47,
             "x": -81.46074,
             "y": -204.20204,
             "category": 7
@@ -255,8 +255,8 @@
         {
             "id": "28",
             "name": "外挂",
-            "value": 12829,
-            "symbolSize": 12829,
+            "value": 50,
+            "symbolSize": 50,
             "x": -225.73984,
             "y": 82.41631,
             "category": 4
@@ -264,8 +264,8 @@
         {
             "id": "29",
             "name": "b",
-            "value": 17898,
-            "symbolSize": 17898,
+            "value": 49,
+            "symbolSize": 49,
             "x": -385.6842,
             "y": -20.206686,
             "category": 3
@@ -273,8 +273,8 @@
         {
             "id": "30",
             "name": "机制",
-            "value": 17764,
-            "symbolSize": 17764,
+            "value": 51,
+            "symbolSize": 51,
             "x": -403.92447,
             "y": -197.69823,
             "category": 2
@@ -282,8 +282,8 @@
         {
             "id": "31",
             "name": "不好玩",
-            "value": 472531,
-            "symbolSize": 472531,
+            "value": 27,
+            "symbolSize": 27,
             "x": -281.4253,
             "y": -158.45137,
             "category": 2
@@ -291,8 +291,8 @@
         {
             "id": "32",
             "name": "太",
-            "value": 71329,
-            "symbolSize": 71329,
+            "value": 49,
+            "symbolSize": 49,
             "x": -122.41348,
             "y": 210.37503,
             "category": 1
@@ -300,8 +300,8 @@
         {
             "id": "33",
             "name": "做",
-            "value": 17755,
-            "symbolSize": 17755,
+            "value": 49,
+            "symbolSize": 49,
             "x": -234.6001,
             "y": -113.15067,
             "category": 1
@@ -309,8 +309,8 @@
         {
             "id": "34",
             "name": "确实",
-            "value": 162491,
-            "symbolSize": 162491,
+            "value": 46,
+            "symbolSize": 46,
             "x": -387.84915,
             "y": 58.7059,
             "category": 3
@@ -318,8 +318,8 @@
         {
             "id": "35",
             "name": "喜欢",
-            "value": 19306,
-            "symbolSize": 19306,
+            "value": 46,
+            "symbolSize": 46,
             "x": -338.2307,
             "y": 87.48405,
             "category": 3
@@ -327,8 +327,8 @@
         {
             "id": "36",
             "name": "司马",
-            "value": 394021,
-            "symbolSize": 394021,
+            "value": 47,
+            "symbolSize": 47,
             "x": -453.26874,
             "y": 58.94648,
             "category": 3
@@ -336,8 +336,8 @@
         {
             "id": "37",
             "name": "烂",
-            "value": 21846,
-            "symbolSize": 21846,
+            "value": 50,
+            "symbolSize": 50,
             "x": -386.44904,
             "y": 140.05937,
             "category": 3
@@ -345,8 +345,8 @@
         {
             "id": "38",
             "name": "apex",
-            "value": 12083,
-            "symbolSize": 12083,
+            "value": 50,
+            "symbolSize": 50,
             "x": -446.7876,
             "y": 123.38005,
             "category": 3
@@ -354,8 +354,8 @@
         {
             "id": "39",
             "name": "依托",
-            "value": 25457,
-            "symbolSize": 25457,
+            "value": 40,
+            "symbolSize": 40,
             "x": 336.49738,
             "y": -269.55914,
             "category": 6
@@ -363,8 +363,8 @@
         {
             "id": "40",
             "name": "排位",
-            "value": 14178,
-            "symbolSize": 14178,
+            "value": 49,
+            "symbolSize": 49,
             "x": 29.187843,
             "y": -460.13132,
             "category": 7
@@ -372,8 +372,8 @@
         {
             "id": "41",
             "name": "sb",
-            "value": 33253,
-            "symbolSize": 33253,
+            "value": 48,
+            "symbolSize": 48,
             "x": 238.36697,
             "y": -210.00926,
             "category": 7
@@ -381,8 +381,8 @@
         {
             "id": "42",
             "name": "卡",
-            "value": 8495,
-            "symbolSize": 8495,
+            "value": 47,
+            "symbolSize": 47,
             "x": 189.69513,
             "y": -346.50662,
             "category": 7
@@ -390,8 +390,8 @@
         {
             "id": "43",
             "name": "真",
-            "value": 9668,
-            "symbolSize": 9668,
+            "value": 50,
+            "symbolSize": 50,
             "x": -187.00418,
             "y": -145.02663,
             "category": 6
@@ -399,8 +399,8 @@
         {
             "id": "44",
             "name": "封",
-            "value": 112979,
-            "symbolSize": 112979,
+            "value": 47,
+            "symbolSize": 47,
             "x": -252.99521,
             "y": 129.87549,
             "category": 4
@@ -408,8 +408,8 @@
         {
             "id": "45",
             "name": "nm",
-            "value": 2109312,
-            "symbolSize": 2109312,
+            "value": 41,
+            "symbolSize": 41,
             "x": -296.07935,
             "y": 163.11964,
             "category": 4
@@ -417,8 +417,8 @@
         {
             "id": "46",
             "name": "狗",
-            "value": 16656,
-            "symbolSize": 16656,
+            "value": 48,
+            "symbolSize": 48,
             "x": 550.3201,
             "y": 522.4031,
             "category": 5
@@ -426,8 +426,8 @@
         {
             "id": "47",
             "name": "妈妈",
-            "value": 11125,
-            "symbolSize": 11125,
+            "value": 47,
+            "symbolSize": 47,
             "x": 488.13535,
             "y": 356.8573,
             "category": 5
@@ -435,8 +435,8 @@
         {
             "id": "48",
             "name": "APEX",
-            "value": 155506,
-            "symbolSize": 155506,
+            "value": 48,
+            "symbolSize": 48,
             "x": 387.89572,
             "y": 110.462326,
             "category": 8
@@ -444,8 +444,8 @@
         {
             "id": "49",
             "name": "草拟",
-            "value": 2635134,
-            "symbolSize": 2635134,
+            "value": 35,
+            "symbolSize": 35,
             "x": 126.4831,
             "y": 68.10622,
             "category": 6
@@ -5055,394 +5055,6 @@
         {
             "source": 13,
             "target": 28
-        },
-        {
-            "source": 35,
-            "target": 39
-        },
-        {
-            "source": 35,
-            "target": 42
-        },
-        {
-            "source": 13,
-            "target": 46
-        },
-        {
-            "source": 3,
-            "target": 45
-        },
-        {
-            "source": 40,
-            "target": 49
-        },
-        {
-            "source": 3,
-            "target": 23
-        },
-        {
-            "source": 23,
-            "target": 45
-        },
-        {
-            "source": 5,
-            "target": 31
-        },
-        {
-            "source": 12,
-            "target": 47
-        },
-        {
-            "source": 10,
-            "target": 12
-        },
-        {
-            "source": 16,
-            "target": 31
-        },
-        {
-            "source": 27,
-            "target": 39
-        },
-        {
-            "source": 34,
-            "target": 44
-        },
-        {
-            "source": 36,
-            "target": 45
-        },
-        {
-            "source": 22,
-            "target": 31
-        },
-        {
-            "source": 12,
-            "target": 31
-        },
-        {
-            "source": 31,
-            "target": 39
-        },
-        {
-            "source": 15,
-            "target": 31
-        },
-        {
-            "source": 14,
-            "target": 49
-        },
-        {
-            "source": 31,
-            "target": 45
-        },
-        {
-            "source": 39,
-            "target": 45
-        },
-        {
-            "source": 27,
-            "target": 45
-        },
-        {
-            "source": 17,
-            "target": 31
-        },
-        {
-            "source": 39,
-            "target": 47
-        },
-        {
-            "source": 20,
-            "target": 36
-        },
-        {
-            "source": 20,
-            "target": 49
-        },
-        {
-            "source": 20,
-            "target": 29
-        },
-        {
-            "source": 20,
-            "target": 46
-        },
-        {
-            "source": 31,
-            "target": 36
-        },
-        {
-            "source": 28,
-            "target": 49
-        },
-        {
-            "source": 13,
-            "target": 37
-        },
-        {
-            "source": 13,
-            "target": 49
-        },
-        {
-            "source": 12,
-            "target": 36
-        },
-        {
-            "source": 31,
-            "target": 33
-        },
-        {
-            "source": 12,
-            "target": 25
-        },
-        {
-            "source": 12,
-            "target": 23
-        },
-        {
-            "source": 12,
-            "target": 42
-        },
-        {
-            "source": 31,
-            "target": 48
-        },
-        {
-            "source": 12,
-            "target": 39
-        },
-        {
-            "source": 12,
-            "target": 15
-        },
-        {
-            "source": 1,
-            "target": 13
-        },
-        {
-            "source": 20,
-            "target": 44
-        },
-        {
-            "source": 20,
-            "target": 27
-        },
-        {
-            "source": 3,
-            "target": 31
-        },
-        {
-            "source": 13,
-            "target": 35
-        },
-        {
-            "source": 10,
-            "target": 31
-        },
-        {
-            "source": 2,
-            "target": 21
-        },
-        {
-            "source": 12,
-            "target": 29
-        },
-        {
-            "source": 2,
-            "target": 19
-        },
-        {
-            "source": 2,
-            "target": 42
-        },
-        {
-            "source": 2,
-            "target": 27
-        },
-        {
-            "source": 12,
-            "target": 17
-        },
-        {
-            "source": 2,
-            "target": 10
-        },
-        {
-            "source": 2,
-            "target": 14
-        },
-        {
-            "source": 2,
-            "target": 46
-        },
-        {
-            "source": 2,
-            "target": 44
-        },
-        {
-            "source": 23,
-            "target": 39
-        },
-        {
-            "source": 31,
-            "target": 47
-        },
-        {
-            "source": 25,
-            "target": 31
-        },
-        {
-            "source": 31,
-            "target": 34
-        },
-        {
-            "source": 23,
-            "target": 31
-        },
-        {
-            "source": 2,
-            "target": 40
-        },
-        {
-            "source": 32,
-            "target": 45
-        },
-        {
-            "source": 3,
-            "target": 49
-        },
-        {
-            "source": 2,
-            "target": 13
-        },
-        {
-            "source": 2,
-            "target": 17
-        },
-        {
-            "source": 2,
-            "target": 9
-        },
-        {
-            "source": 2,
-            "target": 7
-        },
-        {
-            "source": 17,
-            "target": 20
-        },
-        {
-            "source": 20,
-            "target": 22
-        },
-        {
-            "source": 20,
-            "target": 26
-        },
-        {
-            "source": 9,
-            "target": 20
-        },
-        {
-            "source": 7,
-            "target": 20
-        },
-        {
-            "source": 15,
-            "target": 23
-        },
-        {
-            "source": 10,
-            "target": 20
-        },
-        {
-            "source": 6,
-            "target": 20
-        },
-        {
-            "source": 31,
-            "target": 41
-        },
-        {
-            "source": 1,
-            "target": 31
-        },
-        {
-            "source": 2,
-            "target": 33
-        },
-        {
-            "source": 2,
-            "target": 15
-        },
-        {
-            "source": 2,
-            "target": 43
-        },
-        {
-            "source": 15,
-            "target": 49
-        },
-        {
-            "source": 1,
-            "target": 12
-        },
-        {
-            "source": 2,
-            "target": 25
-        },
-        {
-            "source": 26,
-            "target": 49
-        },
-        {
-            "source": 20,
-            "target": 39
-        },
-        {
-            "source": 15,
-            "target": 20
-        },
-        {
-            "source": 13,
-            "target": 39
-        },
-        {
-            "source": 20,
-            "target": 45
-        },
-        {
-            "source": 20,
-            "target": 41
-        },
-        {
-            "source": 12,
-            "target": 44
-        },
-        {
-            "source": 1,
-            "target": 20
-        },
-        {
-            "source": 25,
-            "target": 49
-        },
-        {
-            "source": 20,
-            "target": 25
-        },
-        {
-            "source": 48,
-            "target": 49
-        },
-        {
-            "source": 31,
-            "target": 42
-        },
-        {
-            "source": 12,
-            "target": 20
         }
     ],
     "categories": [

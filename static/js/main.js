@@ -1,3 +1,12 @@
+async function loadImg( url) {
+  return new Promise((resolve, reject) => {
+      let curImg = new Image();
+      curImg.src = url;
+      curImg.onload = function () {
+        resolve(curImg);
+      };
+  });
+}
 // 加载数据并排序
 async function loadData() {
   let data = await d3.csv("/static/data/data.csv").then((rawdata) => {
@@ -18,22 +27,18 @@ async function loadData() {
   data.sort((a, b) => {
     return a[4] - b[4];
   });
-  let relations = await d3.json("/static/data/relations.json", (graph) => {
-    graph.nodes.forEach((node) => {
-      node.label = {
-        show: node.symbolSize > 50,
-      };
-    });
-    return graph;
-  });
+  let relations = await d3.json("/static/data/relations.json");
 
   let frequency = await axios.get("/getwordcnt").then((res) => {
     return res.data.map((item) => {
       return { name: item[0], value: item[1] };
     });
   });
+
+  let maskImg = await loadImg("/static/data/A.png") 
+  
   return new Promise((resolve, reject) => {
-    resolve({ data, relations, frequency });
+    resolve({ data, relations, frequency, maskImg});
   });
 }
 
@@ -52,7 +57,7 @@ function init(args) {
         </Box>
         <Box m={1}>
           <Card>
-            <Words relations={relations} frequency={frequency} />
+            <Words relations={relations} frequency={frequency} maskImg={args.maskImg}/>
           </Card>
         </Box>
         <Box m={1}>

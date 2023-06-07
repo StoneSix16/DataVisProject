@@ -16,7 +16,7 @@ const DateSlider = (props) => {
   };
 
   return (
-    <div style={{ width: "40vw" }} className="slider-box">
+    <div className="slider-box">
       <Typography ref={labelRef} id="date-slider" gutterBottom>
         日期范围: {timestampToDate(startTimestamp)} ~{" "}
         {timestampToDate(endTimestamp)}
@@ -35,17 +35,76 @@ const DateSlider = (props) => {
 
 const ReviewInfo = (props) => {
   const { info } = props;
-  const showReview = (item) => {
-    return item ? item[6] : null;
-  };
   if (info) {
+    let colorRecommendation = info[3] == "True" ? "#60B6E7" : "#E06363";
+    let textRecommendataion = info[3] == "True" ? "推荐" : "不推荐";
+    let colorJudgement, textJudgement, textTip;
+    if (info[3] == "True") {
+      if (info[0] <= 0.45) {
+        colorJudgement = "#9d2dff";
+        textJudgement = "混乱友善";
+        textTip = "我推荐这款游戏和我指责它当然并不冲突";
+      } else if (info[0] >= 0.6) {
+        colorJudgement = "#2ac1ff";
+        textJudgement = "绝对友善";
+        textTip = "至少电脑觉得你没有反讽";
+      } else {
+        colorJudgement = "#0036ff";
+        textJudgement = "中立友善";
+        textTip = "你有点太不极端了";
+      }
+    } else {
+      if (info[0] <= 0.45) {
+        colorJudgement = "#ff0f00";
+        textJudgement = "绝对敌对";
+        textTip = "也许设置一些屏蔽词会更好";
+      } else if (info[0] >= 0.6) {
+        colorJudgement = "#ffc849";
+        textJudgement = "混乱敌对";
+        textTip = "我们下次会换一个有网上冲浪经验的程序来判断评论的友好度";
+      } else {
+        colorJudgement = "#ff7510";
+        textJudgement = "中立敌对";
+        textTip = "是中立的吧（心虚）";
+      }
+    }
     return (
-      <CardContent>
-        <Typography component="p">{info[6]}</Typography>
-        <Typography component="p">{`${info[3]}`}</Typography>
-        <Typography component="p">{`玩家情绪指数${info[0]}`}</Typography>
-        <Typography component="p">{`有${info[7]}玩家认为有价值,有${info[8]}玩家认为好玩`}</Typography>
-      </CardContent>
+      <Card boxShadow={5}>
+        <CardContent>
+          <Typography
+            my={1}
+          >{`有${info[7]}位玩家认为有价值,有${info[8]}位玩家认为好玩`}</Typography>
+          <Typography my={2} fontSize="h3.fontSize" letterSpacing={4}>
+            <Box display="inline">该玩家</Box>
+            <Box
+              fontSize="h2.fontSize"
+              fontWeight="fontWeightMedium"
+              display="inline"
+              color={colorRecommendation}
+            >
+              {textRecommendataion}
+            </Box>
+            <Box display="inline">游玩APEX</Box>
+          </Typography>
+          <Typography mt={3} mb={5} letterSpacing={2} fontSize="h4.fontSize">
+            {info[6]}
+          </Typography>
+          <Typography my={1} fontSize="h5.fontSize">
+            <Box display="inline">{`玩家的友好度为${info[0]}，鉴定为：`}</Box>
+            <Box
+              display="inline"
+              color={colorJudgement}
+              fontSize="h4.fontSize"
+              fontWeight="fontWeightRegular"
+            >
+              {textJudgement}
+            </Box>
+          </Typography>
+          <Typography my={1} >
+            {textTip}
+          </Typography>
+        </CardContent>
+      </Card>
     );
   } else return null;
 };
@@ -90,24 +149,24 @@ const Playtime = (props) => {
   };
   return (
     <Stack direction="row">
-      <Box width="45vw">
+      <Box width="60vw">
         <Card>
           <ReactEcharts
             option={PlaytimeOption}
-            style={{ height: "90vh", width: "40vw" }}
+            style={{ height: "90vh", width: "55vw" }}
             eventHandler={updateInfo}
           />
+          <Box m={3} width="50vw" mx="auto" my="auto">
           <DateSlider
             startTimestamp={startTimestamp}
             endTimestamp={endTimestamp}
             updateData={updateData}
-          />
+            />
+          </Box>
         </Card>
       </Box>
-      <Box width="45vw" mx="auto" my="auto">
-        <Card>
-          <ReviewInfo info={info} />
-        </Card>
+      <Box width="35vw" mx="auto" my="auto">
+        <ReviewInfo info={info} />
       </Box>
     </Stack>
   );
@@ -115,7 +174,7 @@ const Playtime = (props) => {
 
 function initPlaytimeOption(data) {
   const xAxis3D = {
-      name: "评论情绪",
+      name: "评论友好度",
       type: "value",
       min: 0,
       max: 1,
@@ -143,8 +202,17 @@ function initPlaytimeOption(data) {
 
   const option = {
     title: {
-      text: "test",
+      text: "玩家游戏时长与评论友善程度散点图",
+      textAlign:'auto',
+      left: 20,
+      top: 20,
     },
+    legend: {
+      right: 20,
+      top: 20,
+      data: ["推荐", "不推荐"],
+      textStyle: { fontSize: 20 },
+    }, //图例
     series: [
       {
         type: "scatter3D",
