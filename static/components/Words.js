@@ -1,5 +1,4 @@
 const Words = (props) => {
-  // console.log(props)
   const { relations, frequency, maskImg } = props;
   let wordsRelationsOption = initWordsRelationsOption(relations);
   let wordsFrequencyOption = initWordsFrequencyOption(frequency, maskImg);
@@ -18,13 +17,11 @@ const Words = (props) => {
 };
 
 function initWordsRelationsOption(relations) {
-  console.log(relations.nodes);
   relations.nodes = relations.nodes.map((item) => {
     item.category = parseInt(Math.log10(item.value)) - 3;
     item.symbolSize = 10 + (40 / 10000) * (item.value / 1000);
     return item;
   });
-  console.log(relations);
   const option = {
     title: {
       text: "Apex评论高频词关联图",
@@ -82,7 +79,6 @@ function initWordsRelationsOption(relations) {
 }
 
 function initWordsFrequencyOption(frequency, maskImg = null) {
-  console.log(maskImg);
   const option = {
     title: {
       text: "Apex评论高频词词云",
